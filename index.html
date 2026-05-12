@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Wishlist Manager</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <meta name="description" content="A premium, state-of-the-art wishlist manager for organizing your favorite products across multiple user accounts.">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wishlist Studio</h1>
+            <p style="color: var(--text-muted)">Manage your desires with elegance</p>
+        </header>
+
+        <div class="user-selector" id="userSelector">
+            <!-- User buttons will be injected here -->
+        </div>
+
+        <main class="dashboard">
+            <section class="catalog">
+                <h2 class="section-title">✨ Curated Catalog</h2>
+                <div class="product-grid" id="productGrid">
+                    <!-- Products will be injected here -->
+                </div>
+            </section>
+
+            <aside class="wishlist-sidebar glass-card">
+                <h2 class="section-title">🛍️ <span id="currentUserName">Alice</span>'s Wishlist</h2>
+                <div id="wishlistContainer">
+                    <ul class="wishlist-items" id="wishlistItems">
+                        <!-- Wishlist items will be injected here -->
+                    </ul>
+                    <div class="wishlist-footer">
+                        <div class="total-row">
+                            <span>Total Value</span>
+                            <span id="totalValue">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
